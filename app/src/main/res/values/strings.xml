@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Imaginary App</string>
+    <string name="title_tour_detail">Tour Detail</string>
+    <string name="title_tour_list">Tours</string>
+    <string name="api_all_tours">http://api.foxtur.com/v1/tours/</string>
+    <string name="api_top_five_tours">http://api.foxtur.com/v1/tours/top5/</string>
+    <string name="api_tour_detail_append_id_and_slash">http://api.foxtur.com/v1/tours/</string>
+    <string name="api_contact_company">http://api.foxtur.com/v1/contact/</string>
+    <string name="api_tour_id_1_get_800x600">http://api.foxtur.com/v1/tours/1?w=800&amp;h=600</string>
+    <string name="api_url_prefix">http://api.foxtur.com/v1/</string>
+    <string name="title_todelete_list">todelete_list</string>
+    <string name="title_todelete_detail">todelete_detail</string>
+</resources>
