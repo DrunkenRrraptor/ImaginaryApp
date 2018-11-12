@@ -6,6 +6,8 @@ package com.example.robs.imaginaryapp;
 
 public class Company {
 
+    // class for the Company
+
     private String companyName = "";
     private String street = "";
     private String country = "";

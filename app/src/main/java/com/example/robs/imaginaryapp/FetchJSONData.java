@@ -25,6 +25,7 @@ import java.util.Map;
 public class FetchJSONData {
 
     public static final List<TourData> ITEMS = new ArrayList<>(  );
+    public static final Map<String, TourData> ITEM_MAP = new HashMap<String, TourData>();
 
     String api_all_tours = "http://api.foxtur.com/v1/tours/";
     String api_top_five_tours = "http://api.foxtur.com/v1/tours/top5/";
@@ -33,12 +34,9 @@ public class FetchJSONData {
     String api_tour_id_1_get_800x600 = "http://api.foxtur.com/v1/tours/1?w=800&amp;h=600";
     String api_url_prefix = "http://api.foxtur.com/v1/";
 
-    //public static final Map<String, DummyItem> ITEM_MAP = new HashMap<String, DummyItem>();
-    public static final Map<String, TourData> ITEM_MAP = new HashMap<String, TourData>();
-
-    //NetworkManager networkManager = new NetworkManager( Context context );
-
     static {
+
+        // static data; should be retrieved from the api (-> TourListActivity)
 
         TourData example1 = new TourData( 1, "Rhino Tour", "See Rhinos in their natural habitat",
                 "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
@@ -77,8 +75,6 @@ public class FetchJSONData {
                 "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
                 "http://lorempixel.com/200/100/animals/9/", R.drawable.park_logo_2_2_2_icon1_1, "http://lorempixel.com/400/200/animals/9/", "http://lorempixel.com/800/600/animals/9/", "2016-11-09T12:42:41+01:00", "2017-11-09T12:42:41+01:00", 92.7);
 
-
-
         addItem( example1 );
         addItem( example2 );
         addItem( example3 );
@@ -88,8 +84,6 @@ public class FetchJSONData {
         addItem( example7 );
         addItem( example8 );
         addItem( example9 );
-
-
 
         /*NetworkManager.getInstance().somePostRequestReturningString(new Object(), new CustomListener<String>()
         {
@@ -103,12 +97,7 @@ public class FetchJSONData {
             }
         });*/
 
-
-
-
 /*
-
-
 
         JsonObjectRequest jsonObjReq = new JsonObjectRequest( Request.Method.GET,
                 "http://api.foxtur.com/v1/tours/", null,
@@ -136,10 +125,6 @@ public class FetchJSONData {
         };
 
     */
-
-
-
-
 
     }
 

@@ -9,6 +9,8 @@ import android.os.Parcelable;
 
 public class TourData implements Parcelable {
 
+    // class for the Tour Data
+
     private int id = 0;
     private String title = "";
     private String shortDescription = "";

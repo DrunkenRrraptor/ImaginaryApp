@@ -213,6 +213,7 @@ public class TourListActivity extends AppCompatActivity {
     public void fetchJSONData(){
 
         // static data because json request only returned xml and "application/json" header did not fix it
+        // the thus created listed is not being used because of problems concerning the intent/bundle of the arrayList to the fragment
 
         TourData item1 = new TourData( 1, "Rhino Tour", "See Rhinos in their natural habitat",
                 "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",

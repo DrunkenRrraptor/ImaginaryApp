@@ -21,6 +21,8 @@ import java.util.Map;
 
 public class NetworkManager {
 
+    // class to handle JSONRequests
+
     private static String TAG = "NetworkManager";
     private static NetworkManager instance = null;
 
